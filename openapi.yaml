@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "reporting-service"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8112"
+paths:
+  "/reportings":
+    get:
+      summary: "List reportings"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create reporting"
+      responses:
+        "200":
+          description: OK
+  "/reportings/{id}":
+    get:
+      summary: "Get reporting by ID"
+      responses:
+        "200":
+          description: OK
